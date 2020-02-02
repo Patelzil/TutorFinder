@@ -8,22 +8,21 @@
 
 public class Topic extends ListData
 {
-    private String topicName;
     private int ratePerHour;
 
     // constructor
     public Topic(String topic, int rate)
     {
-        topicName = topic;
+        super(topic);
         ratePerHour = rate;
     }
 
-    public String getName() { return topicName; }
+    public String getName() { return dataName; }
     public int getRatePerHour() { return ratePerHour; }
 
     public boolean equals(String key)
     {
-        return topicName.equals(key);
+        return dataName.equals(key);
     }// end equals
 
     public void processTopic(List ttrList, String tutorName)
@@ -41,7 +40,7 @@ public class Topic extends ListData
 
     public void printDetail()
     {
-        System.out.println("Topic " + topicName + " with price " + ratePerHour + ".");
+        System.out.println("Topic " + dataName + " with price " + ratePerHour + ".");
     }// end printDetail
 
 }// end Topic class

@@ -9,6 +9,15 @@
 
 public abstract class ListData
 {
+    String dataName;
+
+    public ListData(){}
+
+    public ListData(String name)
+    {
+        dataName = name;
+    }
+
     public abstract String getName();
 
     public boolean equals(String key){ return false; }

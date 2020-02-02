@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6701abe6-c21a-4702-8b9c-3cee266f6a17" name="Default Changelist" comment="" />
+    <list default="true" id="6701abe6-c21a-4702-8b9c-3cee266f6a17" name="Default Changelist" comment="Added a constructor in the abstract superclass and a field">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +31,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WKNwnuyndTDYEXgIXh1GuxgDlE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -154,7 +161,8 @@
       <workItem from="1580262258088" duration="6126000" />
       <workItem from="1580445186299" duration="1077000" />
       <workItem from="1580498201929" duration="29512000" />
-      <workItem from="1580623364650" duration="613000" />
+      <workItem from="1580623364650" duration="1832000" />
+      <workItem from="1580677649171" duration="354000" />
     </task>
     <servers />
   </component>
@@ -182,10 +190,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="59" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1580524664541" />
-    <state x="443" y="232" width="394" height="223" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579114456249">
+    <state x="443" y="232" width="394" height="223" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580626725635">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="443" y="232" width="394" height="223" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1579114456249" />
+    <state x="443" y="232" width="394" height="223" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1580626725635" />
     <state x="170" y="173" width="941" height="335" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1580014697057">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -194,6 +202,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="321" y="12" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1280.680@0.0.1280.680" timestamp="1579052652094" />
+    <state x="277" y="0" key="CommitChangelistDialog2" timestamp="1580677904180">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="277" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1580677904180" />
     <state x="421" y="98" key="FileChooserDialogImpl" timestamp="1579052450365">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -250,10 +262,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1579052921586" />
-    <state x="349" y="168" key="com.intellij.ide.util.TipDialog" timestamp="1580623367918">
+    <state x="349" y="168" key="com.intellij.ide.util.TipDialog" timestamp="1580677649364">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="349" y="168" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1580623367918" />
+    <state x="349" y="168" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1580677649364" />
     <state x="376" y="242" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1579050719574">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -270,10 +282,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="148" key="git4idea.history.wholeTree.VcsStructureChooser/0.0.1280.680@0.0.1280.680" timestamp="1579052353686" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1580014701617">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1580678113714">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1580014701617" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1580678113714" />
     <state x="442" y="34" key="svn.repositoryBrowser" timestamp="1579053329233">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

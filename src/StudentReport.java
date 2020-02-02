@@ -22,7 +22,6 @@ public class StudentReport extends ListData
         topic = newTopic;
     }
 
-    public Student getMyStudent() { return myStudent; }
     public String getName(){ return myStudent.getName(); }
     public int getHours() { return hours; }
 

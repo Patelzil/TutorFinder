@@ -10,20 +10,19 @@
 
 public class Student extends ListData
 {
-    private String userID;
     private int totalCost;
     private List tutorList;
 
     // constructor
     public Student(String newID)
     {
-        userID = newID;
+        super(newID);
         tutorList = new List();
         totalCost = 0;
     }
 
     // getters
-    public String getName() { return userID; }
+    public String getName() { return dataName; }
     public List getTutorList() { return tutorList; }
 
     // setters
@@ -31,19 +30,19 @@ public class Student extends ListData
 
     public boolean equals(String key)
     {
-        return this.userID.equals(key);
+        return this.dataName.equals(key);
     }// end equals
 
     public void processStudent(List list)
     {
-        if(list.search(userID) == null)
+        if(list.search(dataName) == null)
         {
-            System.out.println("Student with userID " + userID + " successfully created.");
+            System.out.println("Student with userID " + dataName + " successfully created.");
             list.insertFront(this);
         }
         else
         {
-            System.out.println("Duplicate Student with userID " + userID + ".");
+            System.out.println("Duplicate Student with userID " + dataName + ".");
         }
     }
 
@@ -64,7 +63,7 @@ public class Student extends ListData
 
     public void printDetail()
     {
-        System.out.println("Student: " + userID);
+        System.out.println("Student: " + dataName);
 
     }// end printDetail
 

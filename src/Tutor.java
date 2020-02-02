@@ -10,7 +10,7 @@
 
 public class Tutor extends ListData
 {
-    private String userID;
+    //private String dataName;
     private int numHours; // total number of hours per term
     private List topics; // list that stores all the topics taught by the tutor
 
@@ -21,14 +21,14 @@ public class Tutor extends ListData
 
     public Tutor(String newID, int hours)
     {
-        userID = newID;
+        super(newID);
         numHours = hoursUsed = hours;
         topics = new List();
         studentList = new List();
     }
 
     // getters
-    public String getName() { return userID; }
+    public String getName() { return dataName; }
     public int getNumHours() { return numHours; }
     public List getTopics() { return topics; }
     public int getHoursUsed() { return hoursUsed; }
@@ -41,7 +41,7 @@ public class Tutor extends ListData
 
     public boolean equals(String key)
     {
-        return userID.equals(key);
+        return dataName.equals(key);
     }// end equals
 
     public void addTopic(Topic topic)
@@ -49,11 +49,11 @@ public class Tutor extends ListData
         if(topics.search(topic.getName()) == null) // ignores duplicate topic
         {
             topics.insertFront(topic);
-            System.out.println("Topic " + topic.getName() + " added to Tutor " + userID + " with price " + topic.getRatePerHour());
+            System.out.println("Topic " + topic.getName() + " added to Tutor " + dataName + " with price " + topic.getRatePerHour());
         }
         else
         {
-            System.out.println("Duplicate topic " + topic.getName() + " for Tutor " + userID);
+            System.out.println("Duplicate topic " + topic.getName() + " for Tutor " + dataName);
         }
     }// end addTopic
 
@@ -91,20 +91,20 @@ public class Tutor extends ListData
 
     public void processTutor(List list)
     {
-        if(list.search(userID) == null)
+        if(list.search(dataName) == null)
         {
-            System.out.println("Tutor with userID " + userID + " successfully created.");
+            System.out.println("Tutor with dataName " + dataName + " successfully created.");
             list.insertFront(this);
         }
         else
         {
-            System.out.println("Duplicate Tutor with userID " + userID + ".");
+            System.out.println("Duplicate Tutor with dataName " + dataName + ".");
         }
     }
 
     public void printDetail()
     {
-        System.out.println("Tutor: " + userID + " Hours: " + numHours);
+        System.out.println("Tutor: " + dataName + " Hours: " + numHours);
     }// end printDetail
 
 }// end Tutor class
