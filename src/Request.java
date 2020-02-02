@@ -22,13 +22,6 @@ public class Request
         hoursRequested = hours;
     }// end Request
 
-    // getters
-    public String getTopicRequested() { return topicRequested; }
-    public int getHoursRequested() { return hoursRequested; }
-
-    // setters
-    public void setHoursRequested(int hoursRequested) { this.hoursRequested = hoursRequested; }
-    public void setTopicRequested(String topicRequested) { this.topicRequested = topicRequested; }
 
     /*
      * processRequest()
